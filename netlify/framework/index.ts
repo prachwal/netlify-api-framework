@@ -6,7 +6,6 @@ export * from './router/router'
 
 // Middleware
 export * from './middleware'
-export * from './middleware/advanced-middleware'
 
 // Utilities
 export * from './utils/utils'
