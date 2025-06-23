@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest'
-import { cacheMiddleware } from '../middleware/advanced/cache'
+import { cacheMiddleware } from '../middleware/advanced/cache.js'
 
 describe('cacheMiddleware', () => {
   it('should set cache-related headers for GET requests', async () => {

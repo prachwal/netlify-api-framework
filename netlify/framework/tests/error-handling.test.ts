@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest'
-import { errorHandlingMiddleware } from '../middleware/advanced/error-handling'
+import { errorHandlingMiddleware } from '../middleware/advanced/error-handling.js'
 
 describe('errorHandlingMiddleware', () => {
   it('should handle errors', async () => {

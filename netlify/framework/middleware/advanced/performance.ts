@@ -1,5 +1,5 @@
-import { Middleware } from '../../router/router'
-import { logPerformance } from '../../utils/logger'
+import { Middleware } from '../../router/router.js'
+import { logPerformance } from '../../utils/logger.js'
 
 export const performanceMiddleware: Middleware = async (_req, _context, next) => {
   const startTime = performance.now()

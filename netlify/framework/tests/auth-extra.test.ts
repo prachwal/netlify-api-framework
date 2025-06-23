@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { authMiddleware } from '../middleware/auth'
+import { authMiddleware } from '../middleware/auth.js'
 
 describe('authMiddleware - extra coverage', () => {
   it('should return 401 if no auth provided', async () => {

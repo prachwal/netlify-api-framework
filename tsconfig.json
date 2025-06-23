@@ -4,7 +4,7 @@
     "module": "ESNext",
     "declaration": true,
     "outDir": "dist",
-    "rootDir": "./",
+    "rootDir": "netlify/framework",
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "skipLibCheck": true,

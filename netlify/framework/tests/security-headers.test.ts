@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest'
-import { securityHeadersMiddleware } from '../middleware/advanced/security-headers'
+import { securityHeadersMiddleware } from '../middleware/advanced/security-headers.js'
 
 describe('securityHeadersMiddleware', () => {
   it('should set security-related headers', async () => {

@@ -1,6 +1,8 @@
-import { RequestWithParsedBody } from '../router/router'
+import { RequestWithParsedBody } from '../router/router.js'
 // Import the new Winston-based logger
-export { logger, log, logRequest, logPerformance, logError, LogLevel } from './logger'
+export { logger, log, logRequest, logPerformance, logError, LogLevel } from './logger.js'
+export * from './jwtUtils.js'
+export * from './utils.js'
 
 // Define QueryParams locally for framework
 export interface QueryParams {
@@ -187,15 +189,17 @@ export const cache = {
   }
 }
 
-// Cleanup cache periodically
-setInterval(() => {
-  const now = Date.now()
-  for (const [key, item] of cacheMap.entries()) {
-    if (now > item.expiry) {
-      cacheMap.delete(key)
+// Cleanup cache periodically (but only if not in test or CLI mode)
+if (typeof process !== 'undefined' && process.env.NODE_ENV !== 'test' && process.env.NODE_ENV !== 'cli') {
+  setInterval(() => {
+    const now = Date.now()
+    for (const [key, item] of cacheMap.entries()) {
+      if (now > item.expiry) {
+        cacheMap.delete(key)
+      }
     }
-  }
-}, 60000) // Clean up every minute
+  }, 60000) // Clean up every minute
+}
 
 // Pagination utility
 export function paginate<T>(

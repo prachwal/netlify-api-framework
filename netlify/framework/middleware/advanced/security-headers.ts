@@ -1,4 +1,4 @@
-import { Middleware } from '../../router/router'
+import { Middleware } from '../../router/router.js'
 
 export const securityHeadersMiddleware: Middleware = async (_req, _context, next) => {
   const response = await next()

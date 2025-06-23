@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest'
-import { performanceMiddleware } from '../middleware/advanced/performance'
+import { performanceMiddleware } from '../middleware/advanced/performance.js'
 
 describe('performanceMiddleware', () => {
   it('should attach a start time to the request', async () => {

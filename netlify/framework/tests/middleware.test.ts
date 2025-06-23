@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest'
-import type { RequestWithParsedBody } from '../router/router'
+import type { RequestWithParsedBody } from '../router/router.js'
 
 describe('Middleware', () => {
   let request: RequestWithParsedBody

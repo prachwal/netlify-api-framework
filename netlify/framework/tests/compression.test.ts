@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest'
-import { compressionMiddleware } from '../middleware/advanced/compression'
+import { compressionMiddleware } from '../middleware/advanced/compression.js'
 
 describe('compressionMiddleware', () => {
   it('should set the Content-Encoding header if gzip is accepted and content is large', async () => {

@@ -1,4 +1,4 @@
-import { Middleware } from '../../router/router'
+import { Middleware } from '../../router/router.js'
 
 export const requestIdMiddleware: Middleware = async (req, context, next) => {
   let requestId = req.headers.get('X-Request-ID')

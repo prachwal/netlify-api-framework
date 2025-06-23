@@ -1,4 +1,4 @@
-import { Middleware } from '../router/router'
+import { Middleware } from '../router/router.js'
 
 export const authMiddleware: Middleware = async (req, _context, next) => {
   const authHeader = req.headers.get('Authorization')

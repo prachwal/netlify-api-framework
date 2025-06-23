@@ -1,4 +1,4 @@
-import { Middleware } from '../router/router'
+import { Middleware } from '../router/router.js'
 
 export const corsMiddleware: Middleware = async (req, _context, next) => {
   if (req.method === 'OPTIONS') {

@@ -1,4 +1,4 @@
-import { Middleware } from '../../router/router'
+import { Middleware } from '../../router/router.js'
 
 export const compressionMiddleware: Middleware = async (req, _context, next) => {
   const response = await next()

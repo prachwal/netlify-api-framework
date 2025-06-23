@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { corsMiddleware } from '../middleware/cors'
+import { corsMiddleware } from '../middleware/cors.js'
 
 describe('corsMiddleware - extra coverage', () => {
   it('should handle OPTIONS preflight', async () => {

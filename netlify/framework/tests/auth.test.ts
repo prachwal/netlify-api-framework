@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest'
-import { authMiddleware } from '../middleware/auth'
+import { authMiddleware } from '../middleware/auth.js'
 
 describe('authMiddleware', () => {
   it('should set user on request', async () => {

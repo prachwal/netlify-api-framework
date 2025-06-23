@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest'
-import { jsonBodyParser } from '../middleware/json-body-parser'
+import { jsonBodyParser } from '../middleware/json-body-parser.js'
 
 const mockContext = {
   account: {}, cookies: {}, deploy: {}, flags: {}, geo: {}, ip: '',

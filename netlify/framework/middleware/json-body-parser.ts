@@ -1,5 +1,5 @@
-import { Middleware, RequestWithParsedBody } from '../router/router'
-import { logError } from '../utils/logger'
+import { Middleware, RequestWithParsedBody } from '../router/router.js'
+import { logError } from '../utils/logger.js'
 
 export const jsonBodyParser: Middleware = async (req, _context, next) => {
   if (req.method !== 'GET' && req.method !== 'DELETE') {

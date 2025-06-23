@@ -1,5 +1,5 @@
-import { Middleware } from '../router/router'
-import { logRequest } from '../utils/logger'
+import { Middleware } from '../router/router.js'
+import { logRequest } from '../utils/logger.js'
 
 export const loggingMiddleware: Middleware = async (req, _context, next) => {
   const start = Date.now()

@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest'
-import { requestSizeLimit } from '../middleware/advanced/request-size-limit'
+import { requestSizeLimit } from '../middleware/advanced/request-size-limit.js'
 
 describe('requestSizeLimit', () => {
   it('should set the Content-Length header (allow request)', async () => {

@@ -1,5 +1,5 @@
-import { Middleware } from '../../router/router'
-import { logger } from '../../utils/logger'
+import { Middleware } from '../../router/router.js'
+import { logger } from '../../utils/logger.js'
 
 export const requestSizeLimitMiddleware = (maxSizeBytes: number = 1024 * 1024): Middleware => {
   return async (req, _context, next) => {

@@ -1,6 +1,6 @@
 {
   "name": "netlify-api-framework",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Modern API framework dedicated to Netlify Functions (TypeScript, Fetch API)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -41,5 +41,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/prachwal/app-netlify-05.git"
-  }
+  },
+  "type": "module"
 }

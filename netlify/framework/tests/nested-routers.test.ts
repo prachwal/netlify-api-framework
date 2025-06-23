@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from 'vitest'
-import { NetlifyRouter, createResourceRouter } from '../router/router'
+import { NetlifyRouter, createResourceRouter } from '../router/router.js'
 
 // Mock handlers for testing
 const mockContext = {} as any

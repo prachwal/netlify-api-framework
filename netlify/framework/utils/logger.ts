@@ -12,7 +12,7 @@ export enum LogLevel {
 }
 
 // Custom format for console output
-const consoleFormat = winston.format.combine(
+export const consoleFormat = winston.format.combine(
   winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
   winston.format.colorize(),
   winston.format.printf(({ timestamp, level, message, ...meta }) => {

@@ -1,20 +1,14 @@
-export { corsMiddleware } from './cors'
-export { loggingMiddleware } from './logging'
-export { authMiddleware } from './auth'
-export { jsonBodyParser } from './json-body-parser'
-export { rateLimitMiddleware } from './rate-limit'
-
-// Request ID middleware
-export { requestIdMiddleware } from './advanced/request-id'
-// Performance monitoring middleware
-export { performanceMiddleware } from './advanced/performance'
-// Security headers middleware
-export { securityHeadersMiddleware } from './advanced/security-headers'
-// Compression middleware (simple text compression)
-export { compressionMiddleware } from './advanced/compression'
-// Request size limiting middleware
-export { requestSizeLimit, requestSizeLimitMiddleware } from './advanced/request-size-limit'
-// Error handling middleware
-export { errorHandlingMiddleware } from './advanced/error-handling'
-// Cache middleware for static assets
-export { cacheMiddleware } from './advanced/cache'
+// Middleware exports for ESM
+export * from './cors.js';
+export * from './auth.js';
+export * from './json-body-parser.js';
+export * from './logging.js';
+export * from './rate-limit.js';
+// Advanced middleware
+export * from './advanced/cache.js';
+export * from './advanced/compression.js';
+export * from './advanced/error-handling.js';
+export * from './advanced/performance.js';
+export * from './advanced/request-id.js';
+export * from './advanced/request-size-limit.js';
+export * from './advanced/security-headers.js';

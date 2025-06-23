@@ -1,5 +1,5 @@
-import { Middleware } from '../../router/router'
-import { logError } from '../../utils/logger'
+import { Middleware } from '../../router/router.js'
+import { logError } from '../../utils/logger.js'
 
 export const errorHandlingMiddleware: Middleware = async (req, context, next) => {
   try {

@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest'
-import { NetlifyRouter, json, text, html } from '../router/router'
-import type { RequestWithParsedBody, RouteHandler, Middleware } from '../router/router'
+import { NetlifyRouter, json, text, html } from '../router/router.js'
+import type { RequestWithParsedBody, RouteHandler, Middleware } from '../router/router.js'
 
 describe('NetlifyRouter', () => {
   let router: NetlifyRouter

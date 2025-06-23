@@ -13,7 +13,7 @@ import {
   formatTimestamp,
   logger,
   cache
-} from '../utils/utils'
+} from '../utils/utils.js'
 
 // Helper to parse Response body
 async function parseResponseBody(response: Response) {

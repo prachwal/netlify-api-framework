@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest'
-import { corsMiddleware } from '../middleware/cors'
+import { corsMiddleware } from '../middleware/cors.js'
 
 describe('corsMiddleware', () => {
   it('should set the correct headers', async () => {

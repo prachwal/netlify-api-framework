@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
-import { loggingMiddleware } from '../middleware/logging'
-import * as loggerModule from '../utils/logger'
+import { loggingMiddleware } from '../middleware/logging.js'
+import * as loggerModule from '../utils/logger.js'
 
 describe('loggingMiddleware', () => {
   it('should log the request', async () => {

@@ -1,4 +1,4 @@
-import { Middleware } from '../router/router'
+import { Middleware } from '../router/router.js'
 
 const requestCounts = new Map<string, { count: number; resetTime: number }>()
 

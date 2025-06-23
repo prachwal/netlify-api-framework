@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { cache, hashString, sanitizeInput, createErrorResponse, validateFields, paginate } from '../utils/utils'
+import { cache, hashString, sanitizeInput, createErrorResponse, validateFields, paginate } from '../utils/utils.js'
 
 describe('utils.ts - extra coverage', () => {
   describe('cache', () => {

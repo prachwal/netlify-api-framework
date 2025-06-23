@@ -10,7 +10,7 @@ import {
   getUserFromIDToken,
   getTokenInfo,
   createJsonResponse
-} from '../utils/jwtUtils'
+} from '../utils/jwtUtils.js'
 
 // Helper to create a valid JWT (header.payload.signature)
 function makeJWT(payload: object, header: object = { alg: 'HS256', typ: 'JWT', kid: 'abc' }) {

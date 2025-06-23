@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest'
-import { requestIdMiddleware } from '../middleware/advanced/request-id'
+import { requestIdMiddleware } from '../middleware/advanced/request-id.js'
 
 describe('requestIdMiddleware', () => {
   it('should generate a unique request ID', async () => {
