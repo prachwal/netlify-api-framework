@@ -16,9 +16,4 @@ export {
   getTokenInfo,
   debugEnv
 } from './profile'
-export { 
-  databaseHealth, 
-  initDatabase, 
-  databaseInfo 
-} from './database'
 export { debugEnvironment } from './debug'

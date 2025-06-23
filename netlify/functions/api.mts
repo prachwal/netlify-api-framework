@@ -17,9 +17,6 @@ import {
   updateProfile,
   getTokenInfo,
   debugEnv,
-  databaseHealth,
-  initDatabase,
-  databaseInfo,
   debugEnvironment
 } from '../project/controllers/controllers'
 import { 
@@ -48,10 +45,6 @@ router.get('/token-info', getTokenInfo)
 router.get('/debug-env', debugEnv)
 router.get('/debug', debugEnvironment)
 
-// Database endpoints
-router.get('/db/health', databaseHealth)
-router.get('/db/info', databaseInfo)
-router.post('/db/init', initDatabase)
 
 // NOWY SPOSÓB: Zagnieżdżone routery
 // Zamiast 10 linii dla każdego zasobu, teraz tylko 2 linie:

@@ -1,6 +1,6 @@
 // Profile controller - secured with ID token authentication
 import 'dotenv/config';
-import { requireIDToken } from '../../../../src/utils/jwtUtils'
+import { requireIDToken } from '../../../framework/utils/jwtUtils'
 
 // Utility function to create standardized JSON responses with proper UTF-8 encoding
 function createJsonResponse(data: any, status: number = 200): Response {
