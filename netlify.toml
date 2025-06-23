@@ -1,0 +1,31 @@
+# Netlify configuration for Preact + Neon DB
+[build]
+  command = "npm run build"
+  functions = "netlify/functions"
+  publish = "dist"
+
+# API routing
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/*"
+  status = 200
+
+# SPA redirect (uncomment for production if using client-side routing)
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
+
+# Headers for CORS
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Headers = "Content-Type"
+    Access-Control-Allow-Methods = "GET, POST, PUT, DELETE, OPTIONS"
+
+# Dev settings
+[dev]
+  command = "npm run dev"
+  port = 8888
+  targetPort = 5173

@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES2022",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "outDir": "netlify/dist",
+    "rootDir": ".",
+    "declaration": false,
+    "sourceMap": false,
+    "downlevelIteration": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"]
+  },
+  "include": [
+    "netlify/framework/**/*",
+    "netlify/project/**/*",
+    "netlify/functions/**/*"
+  ],  "exclude": [
+    "netlify/dist/**/*",
+    "netlify/tests/**/*",
+    "netlify/functions/archived/**/*",
+    "node_modules/**/*",
+    "dist/**/*"
+  ]
+}
