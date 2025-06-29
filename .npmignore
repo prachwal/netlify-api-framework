@@ -1,0 +1,74 @@
+# Source files
+netlify/
+src/
+test/
+tests/
+*.test.ts
+*.test.js
+*.spec.ts
+*.spec.js
+
+# Built test files
+dist/tests/
+dist/**/*.test.*
+dist/**/*.spec.*
+
+# Development files
+.vscode/
+.idea/
+*.log
+*.tgz
+
+# Configuration files
+.eslintrc*
+.prettierrc*
+tsconfig.json
+tsconfig.*.json
+vitest.config.*
+jest.config.*
+.gitignore
+.env*
+
+# Documentation (keep README.md)
+docs/
+*.md
+!README.md
+
+# Build artifacts
+coverage/
+html/
+.nyc_output/
+
+# Development scripts
+publish.sh
+quick-publish.sh
+fix-extensions.mjs
+test-api.mjs
+
+# Netlify specific
+netlify.toml
+.netlify/
+
+# Node modules and package locks
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Test packages
+test-npm-pkg/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+.circleci/
+
+# Cache
+.cache/
+*.cache
