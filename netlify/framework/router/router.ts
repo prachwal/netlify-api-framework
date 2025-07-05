@@ -265,6 +265,41 @@ export class NetlifyRouter {
       })
     }
   }
+
+  /**
+   * Create a Netlify Functions handler that automatically converts
+   * Netlify event format to Web API Request/Response
+   */
+  handler() {
+    return async (event: any, context: Context) => {
+      try {
+        // Create proper Request object from Netlify event
+        const url = `https://example.com${event.path || '/'}${event.queryStringParameters ? '?' + new URLSearchParams(event.queryStringParameters).toString() : ''}`
+        const request = new Request(url, {
+          method: event.httpMethod || 'GET',
+          headers: event.headers || {},
+          body: event.body || undefined
+        })
+        
+        const response = await this.handle(request, context)
+        
+        // Convert Response to Netlify format
+        const responseText = await response.text()
+        return {
+          statusCode: response.status,
+          headers: Object.fromEntries(response.headers.entries()),
+          body: responseText
+        }
+        
+      } catch (error) {
+        return {
+          statusCode: 500,
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ error: String(error) })
+        }
+      }
+    }
+  }
 }
 
 // Helper functions dla response

@@ -55,5 +55,3 @@ export interface CacheStore {
   delete(key: string): void
   clear(): void
 }
-
-export * from './index.js';
