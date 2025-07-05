@@ -1,6 +1,6 @@
 {
   "name": "netlify-api-framework",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Modern API framework dedicated to Netlify Functions (TypeScript, Fetch API)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
